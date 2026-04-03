@@ -53,5 +53,5 @@ Este proyecto es una landing page de portafolio personal desarrollada como parte
 ---
 
 ## Publicación
-- **Repositorio GitHub:** [URL de tu repositorio]
-- **Sitio publicado en Vercel:** [URL de Vercel]
+- **Repositorio GitHub:** https://github.com/Cintia95/mi-Portfolio
+- **Sitio publicado en Vercel:** https://mi-portfolio-three-gamma.vercel.app/
