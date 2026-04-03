@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Personal | Desarrollador Web</title>
+    <!-- Google Fonts: Elegí 'Poppins' porque es moderna, legible y transmite profesionalismo -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Vinculación al archivo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- COMENTARIO 1: El header contiene el título principal del sitio, que también funciona como logo textual. Futura mejora: podría agregarse un logo con imagen SVG. -->
+    <header>
+        <h1>Mi Portafolio</h1>
+    </header>
+
+    <!-- COMENTARIO 2: Barra de navegación con enlaces internos a las secciones principales usando IDs. Ideal para mejorar la navegación y accesibilidad. -->
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#tarjetas">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Sección: Presentación Personal -->
+        <!-- COMENTARIO 3: Aquí va mi presentación. Podría mejorarse agregando un botón de descarga de CV en el futuro. -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <div class="sobre-mi-contenido">
+                <!-- Imagen con atributo alt descriptivo para accesibilidad -->
+                <img src="img/avatar.png" alt="Avatar generado por IA representando al desarrollador">
+                <p>¡Hola! Soy una desarrolladora web apasionada por crear soluciones digitales funcionales y estéticas. Me interesa el front-end, la usabilidad y aprender nuevas tecnologías cada día. Mi misión es transformar ideas en experiencias web memorables.</p>
+            </div>
+        </section>
+
+        <!-- Sección: Tarjetas o Columnas con Flexbox/Grid -->
+        <section id="tarjetas">
+            <h2>Mis Proyectos</h2>
+            <div class="tarjetas-container">
+                <div class="tarjeta">
+                    <img src="img/sistema_pc.png" alt="Captura del proyecto 1">
+                    <h3>Sistema Club deportivo para PC</h3>
+                    <p>Aplicación de escritorio para la gestión de un club deportivo.</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="img/sistema_android.jpeg" alt="Captura del proyecto 2">
+                    <h3>Sistema Club deportivo para movil</h3>
+                    <p>Aplicación movil para la gestión de un club deportivo.</p>
+                </div>
+                <!-- COMENTARIO 4: Se pueden agregar más tarjetas fácilmente sin romper el layout gracias a Flexbox. -->
+            </div>
+        </section>
+
+        <!-- Sección: Listado de Habilidades (uso de lista) -->
+        <section id="habilidades">
+            <h2>Habilidades y Tecnologías</h2>
+            <ul class="lista-habilidades">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>C#</li>
+            </ul>
+        </section>
+
+        <!-- Sección: Formulario de Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Sección: Películas Favoritas -->
+        <section id="peliculas">
+            <h2>Mis Películas Favoritas</h2>
+            <div class="peliculas-container">
+                <div class="pelicula">
+                    <img src="https://play-lh.googleusercontent.com/9fX_4vPaf_FhS79QBE0ZDszOT6h8aKeGQuEcdLRFyttkqjaNHSF9RfFimVZiF8G2bWZJ" alt="Poster de El Padrino">
+                    <h3>Yo antes de ti</h3>
+                    <p>Un emotivo romance que explora el amor, la libertad y las decisiones difíciles. Will y Louisa demuestran que a veces amar también significa dejar ir.</p>
+                </div>
+                <div class="pelicula">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYTkyYjVkNDItODc1Ny00NzA1LTkwY2YtZDUwNTlhMDk3MTZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Poster de Inception">
+                    <h3>Harry Potter y la piedra filosofal</h3>
+                    <p>El inicio de la saga mágica que cautivó al mundo. Acompaña a Harry, Ron y Hermione en su primer año en Hogwarts, donde la amistad y el valor vencen a la oscuridad.</p>
+                </div>
+                <div class="pelicula">
+                    <img src="https://play-lh.googleusercontent.com/twMlheL9xiCUH8QL7B5TXKO8Zt9FUfv5KYJo4hW8p66i-vcdn132584KJU4jlQllYNM" alt="Poster de Matrix">
+                    <h3>Diario de una pasión</h3>
+                    <p>Un amor tan profundo que desafía el tiempo y las circunstancias. Noah y Allie nos recuerdan que el verdadero amor nunca se olvida, incluso cuando la memoria falla.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Mi Portafolio Personal</p>
+        <div class="redes-sociales">
+            <a href="#">GitHub</a> | <a href="#">LinkedIn</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
